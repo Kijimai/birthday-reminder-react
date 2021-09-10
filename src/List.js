@@ -4,12 +4,13 @@ const List = (props) => {
   const { name, age, image } = props
   return (
     <>
-      <div className="person">
+      <article className="person">
         <img src={image} alt={name} />
-        <h4>{name}</h4>
-
-        <p>{age}</p>
-      </div>
+        <div>
+          <h4>{name}</h4>
+          <p>{age}</p>
+        </div>
+      </article>
     </>
   )
 }
